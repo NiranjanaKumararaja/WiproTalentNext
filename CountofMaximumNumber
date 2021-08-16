@@ -1,0 +1,30 @@
+//Design an algorithm to accept 10 integer elements for an array and then find the number of times the number with the maximum value occurs in the array.
+//For Example – If input elements are: 1, 2, 5, 6, 8, 9, 9, 3, 4, and 2
+//Output must be 2
+//Reason: The number with the highest value in the array is 9. It occurs 2 times in the array.
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner in=new Scanner(Sytem.in);
+    int[] a=new int[10];
+    for(int i=0;i<=9;i++){
+      a[i]=in.nextInt();
+     }
+     int max=a[0];
+     for(int i=1;i<=9;i++){
+      if(a[i]>max){
+        max=a[i];
+       }
+       int count=0;
+       for(int i=0;i<=9;i++){
+        if(a[i]==max){
+          count++;
+         }
+        }
+        ArrayList<Integer> l1=new ArrayList<Integer>();
+        for(int j=0;j<=9;j++){
+          l1.add(a[j]);
+         }
+         System.out.println(Collections.frequency(l1,max));
+        }
+      }
