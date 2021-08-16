@@ -1,0 +1,29 @@
+//Design an algorithm to print a pyramid based on level entered by the user.
+import java.util.*;
+public class Main{
+ public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int a=sc.nextInt();
+  sc.close();
+  int k=1,m=0;
+  int rem=0;
+  for(int i=1;i<=a;i++){
+   int q=i+1;
+   for(int j=a-1;j>=i;j--){
+    System.out.print(" ");
+   }
+   for(int j=1;j<=i;j++){
+    rem=k%10;
+    System.out.printf(rem+" ");
+    k++;
+   }
+   int rem1=m;
+   for(int j=2;j<=i;j++){
+    System.out.print(rem1%10+" ");
+    rem1--;
+   }
+   m=m+q;
+   System.out.println();
+  }
+ }
+}
