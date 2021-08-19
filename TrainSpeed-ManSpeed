@@ -1,0 +1,15 @@
+//A train X m long passes a man, running at 5 km/hr in the same direction in which the train isgoing, in Y seconds. Design an algorithm to accept the values of X and Y as input from the user
+//and then calculate the speed of the train.
+//Note: values of X and Y must be positive and non-zero.
+import java.util.Scanner;
+public class Main{
+ public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int train_length=sc.nextInt();
+  int man_speed=5;
+  int train_time=sc.nextInt();
+  int trainvel_man=(train_length*18)/(train_time*5);
+  int train_speed=trainvel_man + man_speed;
+  System.out.println(train_speed);
+ }
+}
