@@ -1,0 +1,14 @@
+//The difference between a two-digit number and the number obtained by interchanging the positions of its digits is 36. Design an algorithm to find the difference between the two digits of
+//that number.
+import java.util.Scanner;
+
+public class  DBTwoDigits{
+	public static void main(String args[]){
+	    Scanner sc = new Scanner(System.in);
+	    int num;
+	    int rev_num;
+	    int num_diff=36;
+	    int digit_diff = (num_diff) / 9;
+	    System.out.print("The difference between digits of the number is : "+digit_diff);
+	}
+}
