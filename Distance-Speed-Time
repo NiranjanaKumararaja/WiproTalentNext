@@ -1,0 +1,12 @@
+//A train running at the speed of x km/hr crosses a pole in y seconds. Design an algorithm to accept x and y as inputs from the user and then calculate the length of the train.
+//Note: values of x and y must be positive and non-zero.
+import java.util.Scanner;
+public class Main{
+ public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int speed=sc.nextInt();
+  int time=sc.nextInt();
+  int distance=speed*time;
+  System.out.print(distance);
+ }
+}
