@@ -1,0 +1,14 @@
+//Ravi and Kumar are working on an assignment. Ravi takes 6 hours to type 32 pages on a computer, while Kumar takes 5 hours to type 40 pages. Design an algorithm to calculate how
+//much time they will take, working together on two different computers to type an assignment of 110 pages.
+import java.util.*;
+public class Main{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     float ravi=16/3; 
+     float kumar=8; 
+     float both=40/3; 
+     System.out.print((110*3)/40);
+	}
+
+}
