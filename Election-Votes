@@ -1,0 +1,16 @@
+//In an election between two candidates, one got 55% of the total valid votes, 20% of the votes were invalid. The total number of votes was X (value greater than 5000), design an algorithm to
+//accept a value for X from the user and calculate the number of valid votes that the other candidate got.
+import java.util.Scanner;
+public class Main{
+ public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int firstvoteper=55;
+  int invalidvoteper=20;
+  int totalvote=sc.nextInt();
+  int validvoteper=100-invalidvoteper;
+  int secondvoteper=100-firstvoteper;
+  int totalvalidvote=totalvote*validvoteper/100;
+  int secondvalidvote=totalvalidvote*secondvoteper/100;
+  System.out.println(secondvalidvote);
+ }
+}
