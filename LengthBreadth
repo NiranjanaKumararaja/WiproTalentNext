@@ -1,0 +1,12 @@
+//The difference between the length and breadth of a rectangle is 23 m. If its perimeter is 206 m, design an algorithm to calculate its area.
+public class Main{
+ public static void main(String[] args){
+  int p=206;// p=2(l+b)==>[(l+b)/2]---->Perimeter
+  int a=p/2; //a=l+b
+  int d=23; //d=l-b=23
+  int b=(a-d)/2; //b=80/2=40--->Breadth
+  int l=a-b; //l=63--->Length
+  int area=l*b; //--->Area
+  System.out.println(area);
+  }
+ }
